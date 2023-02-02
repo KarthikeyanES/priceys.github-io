@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signincomp/signincomp.component.css">
+    <link rel="icon" href="/assets/PHOTOS/userid.png" />
+    <title>Sign-in</title>
+</head>
+<body>
+    <div class="form">
+        <header>
+          <img src="/assets/PHOTOS/bg.png" alt="signup" />
+          <h1>Sign-up</h1>
+        </header>
+        <form id="form" action="/">
+            <label for="Username">Username</label>
+            <input type="User-id" placeholder="Username" />
+            <label for="password">Password</label>
+            <input type="password" placeholder="password" />
+            <label for="verify"><img src="" alt="captcha"></label>
+            <input type="text"/>
+        </form>
+        <footer>
+            <!--logged in page-->
+            <a [routerLink]="['/loggedin']" routerLinkActive="router-link-active" ><button>Sign-in</button></a>
+            
+            <p>New User</p>
+            <a [routerLink]="['/signup']" routerLinkActive="router-link-active" ><button>REGISTER</button></a>
+          </footer>
+
+    </div>
+
+</body>
+</html>

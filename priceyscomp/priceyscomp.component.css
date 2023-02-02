@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+    margin :0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    background: url("/assets/PHOTOS/pricey/back2.jpeg") no-repeat center ;
+    background-attachment: fixed ;
+    background-size: contain;
+    background-position: bottom;
+    width: 100vw;
+    height:100vh;
+    position: absolute;
+
+}
+
+
+    a{
+        color: black;
+        text-decoration: none;
+
+    }
+
+    ul li{
+        list-style:none;
+    }
+
+
+    header{
+        margin: 0px;
+        height: 130px;
+        width:100%;
+        position: fixed;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        background-color:rgba(110,100,255,.8) ;
+
+    }
+
+    .navbar  ul li{
+        float:left;
+        flex-wrap: nowrap;
+        margin: 20px;
+        font-size: 20px;
+        display: block;
+        position:relative;
+
+    }
+    .navbar  ul li a:hover{
+        font-size: 25px;
+        border: 3px dashed darkblue;
+        background-color: rgba(0,200,255,.8);
+        padding: 4px;
+        transition: .4ms;
+
+    }
+    .navbar ul li ul{
+        color: rgb(0 ,0 ,100);
+    }
+
+    .navbar ul li ul {
+        position: absolute;
+        width: 200px;
+        text-align: left;
+        background-color: rgba(238, 226, 226, 1);
+        display: none;
+    }
+   /* .navbar ul .contact ul{
+        position: absolute;
+        width:200px;
+        text-align: left;
+        background-color:  rgba(238, 226, 226, 0.8);
+        display:none;
+
+    }*/
+    .navbar ul li:hover>ul, .navbar ul li:focus-within>ul
+    {
+        display: block;
+    }
+   .navbar ul li ul li a {
+    color: brown;
+
+   }
+   .navbar ul li ul li a:hover{
+    border:none;
+    font-size: 25px;
+    color:darkgreen;
+    background-color:rgba(206, 84, 14,.6);
+
+    }
+    .navbar ul li ul li{
+        width: 100%;
+        }
+   .navbar ul li ul li a img{
+    margin-top: 3px;
+
+
+   }
+   .navbar ul li ul li ul {
+    position: relative;
+    width: 200px;
+    text-align: left;
+    background-color: rgba(238, 226, 226, 1);
+    display: none;
+}
+.navbar ul li ul li:hover>ul ,
+    .navbar ul li ul li:focus-within>ul{
+        display: block;
+        background-color: rgba(0,200,255,.8);
+        color: darkred;
+    }
+
+
+
+
+   /* #signup img{
+        width :50px;
+        border : 2px solid black;
+        border-radius: 100px;
+
+    }
+
+    #signin  img{
+        width: 50px;
+        border : 2px solid brown;
+        border-radius: 100px;
+
+    }
+
+ .products , .contact{
+
+        text-align: left;
+    }
+    .products li , .contact li{
+        border:none;
+        background: green;
+        margin:2px;
+    }*/
+
+h1 img {
+    margin:10px;
+    width:100px;
+    height:100px;
+    border:2px solid black;
+    border-radius: 200px;
+}
+
+.shops ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    justify-content: space-between;
+
+
+
+}
+.shops ul li a img{
+    width:50px;height: 50px;
+    border-radius: 100px;
+
+}
+/*@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    position: absolute;
+
+}*/
+
+
+/*.shops ul li{
+    left: 40%;
+    top: 35%;
+    animation:myOrbit 4s linear infinite;
+}*/
+
+
+.moto {
+
+    padding-top: 40px 10px 40px 10px;
+    text-decoration: none;
+
+}
+
+.round{
+    display:flex;
+    justify-content: center;
+    margin-top: 250px;
+    margin-bottom: 100px;
+
+}
+.round button{
+    font-size: 40px;
+    height: 300px;
+    width:300px;
+    border-radius: 300px;
+    flex-wrap: wrap;
+    border: 3px dashed rgba(0,0,0,1);
+
+
+}
+
+@keyframes revolve{
+
+    from{ transform : rotateX(0deg) translateX(0px) rotateX(360deg) translate(0px) rotateY(0deg) translate(0px) rotateY(360deg); }
+
+
+}
+
+.shops ul li{
+    animation: revolve 20s infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
